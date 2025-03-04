@@ -247,10 +247,31 @@ button,
 select,
 optgroup,
 textarea {
-  margin: 0;
+  border-radius: 20px;
+  border: 3px solid #88a2de;
+  padding: 8px;
+  margin-bottom: 10px;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 16px;
   line-height: inherit;
+}
+
+input {
+  width: 60%;
+  max-width: 400px;
+}
+
+.input::placeholder {
+  color: #88a2de;
+  font-size: 18px;
+}
+
+.input-deskripsi {
+  height: 150px;
+  width: 60%;
+  padding: 5px;
+  text-align: left;
+  vertical-align: top;
 }
 
 button,
@@ -265,6 +286,12 @@ select {
 
 select {
   word-wrap: normal;
+  border-radius: 20px;
+  border: 3px solid #88a2de;
+  font-size: 18px;
+  color: #3858c1;
+  width: 60%;
+  max-width: 400px;
 }
 
 button,
@@ -2160,7 +2187,9 @@ pre code {
 }
 
 .form-control {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
   height: calc(1.5em + 1.3rem + 2px);
   padding: 0.65rem 0.9rem;
@@ -2270,6 +2299,20 @@ select.form-control:focus::-ms-value {
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0;
+}
+
+.form-newcont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.left, .rigt {
+  width: 100%;
 }
 
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
@@ -2806,6 +2849,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d;
+  width: 75px;
 }
 
 .btn-secondary:hover {
@@ -10983,6 +11027,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+  color: #ff914d;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  color: #4e555b;
 }
 
 @media (min-width: 992px) {
@@ -11418,6 +11469,14 @@ pre {
   border-radius: 50%;
   background: #ff7a57;
   box-shadow: 0 0 10px rgba(255, 122, 87, 0.5);
+}
+
+.footer-contact {
+  display: flex;
+  height: 210px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
 }
 
 .page-footer {
