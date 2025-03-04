@@ -51,9 +51,56 @@
                     <a href="https://www.instagram.com/elisaaelis_/" target="_blank">
                         <button class="btn btn-primary rounded">Instagram</button>
                     </a>
-                  
-        </div>  
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section id="Kirim Pesan" class="section-title">
+        <fieldset>
+            <div class="container text-center">
+            <legend><h6 class="section-title">Kirim Pesan pada Elisa</h6></legend>
+            <br>
+            </div>
 
+            <div class="container">
+                <form action="@" method="post" enctype="text/plain" class="form-newcont">
+                    <div class="left">
+                        <h5 class="pl-md-1 section-subtitle">Nama Anda</h5>
+                        <input type="text" name="Nama" placeholder="Nama Anda" class="input" required>
+
+                        <h5 class="pl-md-1 section-subtitle">Email</h5>
+                        <input type="text" name="Email" placeholder="Email Anda" class="input" required>
+
+                        <h5 class="pl-md-1 section-subtitle">Institusi</h5>
+                        <input type="text" name="Institusi" placeholder="Institusi Anda" class="input">
+                    </div>
+
+                    <div class="right">
+                        <h5 class="pl-md-1 section-subtitle">Apa yang ingin Anda Sampaikan?</h5>
+                        <select name="Pesan" class="select" required>
+                            <option value="" disabled selected style="color: #88a2de;">Pilih salah satu</option>
+                            <option value="Pertanyaan">Pertanyaan</option>
+                            <option value="Kritik dan Saran">Kritik dan Saran</option>
+                            <option value="Penawaran Pekerjaan">Penawaran Pekerjaan</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+
+                        <h5 class="pl-md-1 section-subtitle">Deskripsikan di sini</h5>
+                        <textarea type="text" name="Deskripsi" class="input input-deskripsi" required></textarea>
+                        <br>
+                        <input type="submit" value="Kirim" class="btn-secondary section-subtitle" style="color: #f7f7f7;">
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        </fieldset>
+    </section>
+    
+    <footer class="footer-contact">
+        <h5 class="subtitle" style="color: #88a2de;">Masukan Anda sangat Berarti</h5>
+    </footer>
+	
 </body>
 </html>
