@@ -11032,8 +11032,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-subtitle {
-  font-size: 20px;
+  font-size: 16px;
   color: #4e555b;
+  font-style: italic;
 }
 
 @media (min-width: 992px) {
